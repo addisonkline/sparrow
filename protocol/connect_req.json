@@ -1,0 +1,8 @@
+{
+    "protocol": "sparrow",
+    "version": "0.0.1",
+    "method": "connect",
+    "body": {
+        "tag": "string"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "protocol": "sparrow",
+    "version": "0.0.1",
+    "method": "msg_fetch",
+    "body": {
+        "session_key": "string",
+        "number": "number"
+    }
+}
