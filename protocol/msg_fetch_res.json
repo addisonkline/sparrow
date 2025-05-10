@@ -5,7 +5,12 @@
     "return_code": "number",
     "message": "string",
     "body": {
-        "length": "number",
-        "messages": "array"
+        "messages": [
+            {
+                "message_id": "string",
+                "message_timestamp": "number",
+                "message_content": "string"
+            }
+        ]
     }
 }

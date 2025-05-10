@@ -1,0 +1,13 @@
+{
+    "protocol": "sparrow",
+    "version": "0.0.1",
+    "method": "msg_send",
+    "body": {
+        "message": {
+            "message_id": "string",
+            "message_timestamp": "number",
+            "user_tag": "string",
+            "message_content": "string"
+        }
+    }
+}

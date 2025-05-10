@@ -1,0 +1,9 @@
+{
+    "protocol": "sparrow",
+    "version": "0.0.1",
+    "method": "disconnect",
+    "body": {
+        "user_tag": "string",
+        "timestamp": "number"
+    }
+}

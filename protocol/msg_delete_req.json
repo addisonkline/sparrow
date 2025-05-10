@@ -1,9 +1,9 @@
 {
     "protocol": "sparrow",
     "version": "0.0.1",
-    "method": "msg_fetch",
+    "method": "msg_delete",
     "body": {
         "session_key": "string",
-        "latest_message_id": "string"
+        "message_id": "string"
     }
 }
