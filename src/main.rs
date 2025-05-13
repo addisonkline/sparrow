@@ -27,6 +27,10 @@ async fn main() -> Result<()> {
         },
         Commands::Run {} => {
             
+        },
+        _ => {
+            eprintln!("Unknown command. Use --help for usage information.");
+            return Ok(());
         }
     }
 
