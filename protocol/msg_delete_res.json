@@ -1,8 +1,0 @@
-{
-    "protocol": "sparrow",
-    "version": "0.0.1",
-    "method": "msg_delete",
-    "return_code": "number",
-    "message": "string",
-    "body": { }
-}
