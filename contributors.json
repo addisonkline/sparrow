@@ -1,9 +1,16 @@
 {
     "contributors": [
         {
-            "name": "John Doe",
-            "email": "john.doe@example.com",
-            "contributions": "10"
+            "name": "Ryan Heaton",
+            "email": "ryan@charon-labs.com",
+            "contribution": "help with protocol development and WebSocket implementation",
+            "status": "active"
+        },
+        {
+            "name": "Addison Kline",
+            "email": "addison@charon-labs.com",
+            "contribution": "the rest",
+            "status": "active"
         }
     ]
 }
