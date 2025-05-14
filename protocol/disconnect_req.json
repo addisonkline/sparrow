@@ -1,8 +1,0 @@
-{
-    "protocol": "sparrow",
-    "version": "0.0.1",
-    "method": "disconnect",
-    "body": {
-        "session_key": "string"
-    }
-}
