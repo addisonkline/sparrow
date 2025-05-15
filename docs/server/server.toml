@@ -1,8 +1,0 @@
-[sparrow]
-name = "str"
-blurb = "str"
-key = "str"
-version = "version no. as str"
-port = "int, default = 8848"
-
-# member information is stored in the server's database

@@ -1,11 +1,17 @@
 # The Sparrow Protocol
 
-**Version 0.0.1 (May 6, 2025)**
+**Created: May 6, 2025**
 
-**Developed by Addison Kline (addison@charon-labs.com)**
+**Last Updated: May 15, 2025**
 
->[!NOTE]
->This document contains information specifically pertaining to the Sparrow Protocol. For information about Sparrow more generally, visit the ```README``` in the root directory.
+## Contents
+
+- [The Sparrow Protocol](#the-sparrow-protocol)
+  - [Contents](#contents)
+  - [Summary](#summary)
+  - [Technical Overview](#technical-overview)
+  - [Methods](#methods)
+  - [Events](#events)
 
 ## Summary
 The Sparrow Protocol is the means by which a Sparrow server and client communicate over a network. The categories of communications are defined below. 
@@ -19,28 +25,16 @@ Furthermore, The Sparrow Protocol defines a number of different methods, defined
 The Sparrow Protocol is an application-layer internet protocol operating on top of WebSockets, utilizing TCP port 8848. All communications are  formatted using JSON, which is then serialized and encoded into bytes via UTF-8 for transmission.
 
 ## Methods
-Below are all of the methods currently supported by the Sparrow Protocol. For more details regarding each method, consult the corresponding Markdown file(s) in ```protocol/req_res```.
+A method is a type of request/response communication. Below are all of the methods currently supported by the Sparrow Protocol:
 
-### connect
-Connect to a Sparrow server. The client gives a tag (user ID) to the server and receives a session key in return. A session key is required for any further communication between the client and server to be successful.
-
-### disconnect
-Disconnect from a Sparrow server. The client gives an active session key to the server, which deactivates it. 
+- [connect](req_res/connect.md): A client attempts to connect to a given server.
+- [disconnect](req_res/disconnect.md): A client connected to a given server attempts to disconnect.
 
 ## Events
-Below are all of the events currently supported by the Sparrow Protocol. For more details regarding each event, consult the corresponding Markdown file(s) in ```protocol/events```.
+An event is a form of communication that is broadcast to the server when triggered. Below are all of the events currently supported by the Sparrow Protocol:
 
-### user_conn
-The event broadcast to all clients by the server when a new user successfully connects.
-
-### user_disconn
-The event broadcast to all clients by the server when a connected user successully disconnects.
-
-### msg_new
-The event initiated by a client to send a new message. If successful, the server then broadcasts this event to all connected clients.
-
-### msg_edit
-The event initiated by a client to edit or delete an existing message. If successful, the server then broadcasts this event to all connected clients.
-
-### alias_edit
-The event initiated by a client to edit their in-server alias (nickname). If successful, the server then broadcasts this event to all connected clients.
+- [user_conn](events/user_conn.md): A new client connects.
+- [user_disconn](events/user_disconn.md): A client disconnects.
+- [msg_new](events/msg_new.md): A new message is sent.
+- [msg_edit](events/msg_edit.md): An existing message is edited.
+- [alias_edit](events/alias_edit.md): A client's alias is edited.
