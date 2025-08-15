@@ -1,28 +1,27 @@
-# msg_edit
+# Event `msg_edit`
 
 ## Schema
 ```json
 {
-    "type": "msg_edit",
-    "msg_id": "ULID as string",
-    "timestamp": "string",
-    "delete": "bool",
-    "new_length": "number",
-    "new_content": "string"
+    "head": {
+        "protocol": "sparrow",
+        "version": server version number as string,
+        "origin": server URI as string,
+        "timestamp": ISO 8601 timestamp as string,
+        "type": "event/msg_edit"
+    },
+    "body": {
+        "msg_id": ID of edited message as string,
+        "user_id": user ID of message editor as string,
+        "new_content": content of edited message as string
+    }
 }
 ```
 
 ## Server
 
-On receipt:
-- If delete, removes message from chat log
-- If not delete, replaces message content with new content
-Finally, echoes event as a broadcast to all clients
+![TODO]
 
 ## Client
 
-On receipt:
-- If delete, replaces message with "Message deleted"
-- If not delete, replaces message content with new content and displays "Message edited at {ts}" alongside it
-
-After sent, expects event to be echoed back
+![TODO]

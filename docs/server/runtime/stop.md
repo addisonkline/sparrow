@@ -1,10 +1,10 @@
-# runtime command stop
+# Runtime command `stop`
 
 Save and close the server.
 
 ## Contents
 
-- [runtime command stop](#runtime-command-stop)
+- [Runtime command `stop`](#runtime-command-stop)
   - [Contents](#contents)
   - [Description](#description)
 

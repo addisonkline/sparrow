@@ -1,4 +1,4 @@
-# Request and Response for `disconnect`
+# Request and Response for `alias_edit`
 
 ## Schema
 
@@ -10,9 +10,11 @@
         "version": client version number as string,
         "origin": user session token as string,
         "timestamp": ISO 8601 timestamp as string,
-        "type": "request/disconnect"
+        "type": "request/alias_edit"
     },
-    "body": { }
+    "body": {
+        "alias_new": new user alias as string
+    }
 }
 ```
 
@@ -24,7 +26,7 @@
         "version": server version number as string,
         "origin": server URI as string,
         "timestamp": ISO 8601 timestamp as string,
-        "type": "response/disconnect"
+        "type": "response/alias_edit"
     },
     "body": {
         "success": operation success value as boolean,

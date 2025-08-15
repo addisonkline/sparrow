@@ -1,10 +1,10 @@
-# cli command listen
+# CLI command `listen`
 
 Open up a server that is running in the background.
 
 ## Contents
 
-- [cli command listen](#cli-command-listen)
+- [CLI command `listen`](#cli-command-listen)
   - [Contents](#contents)
   - [Arguments](#arguments)
     - [name](#name)

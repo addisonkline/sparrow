@@ -1,10 +1,10 @@
-# runtime command kick
+# Runtime command `kick`
 
 Close the connection between the server and a specific client.
 
 ## Contents
 
-- [runtime command kick](#runtime-command-kick)
+- [Runtime command `kick`](#runtime-command-kick)
   - [Contents](#contents)
   - [Arguments](#arguments)
     - [user](#user)

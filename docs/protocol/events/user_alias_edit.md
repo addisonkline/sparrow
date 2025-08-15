@@ -1,4 +1,4 @@
-# Event `msg_new`
+# Event `user_alias_edit`
 
 ## Schema
 ```json
@@ -8,12 +8,11 @@
         "version": server version number as string,
         "origin": server URI as string,
         "timestamp": ISO 8601 timestamp as string,
-        "type": "event/msg_new"
+        "type": "event/user_alias_edit"
     },
     "body": {
-        "msg_id": message ID as string,
-        "user_id": sender ID as string,
-        "content": message content as string
+        "user_id": ID of editing user as string,
+        "new_alias": user's new alias as string
     }
 }
 ```

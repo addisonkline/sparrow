@@ -1,10 +1,10 @@
-# cli command list
+# CLI command `list`
 
 Show metadata for all owned servers.
 
 ## Contents
 
-- [cli command list](#cli-command-list)
+- [CLI command `list`](#cli-command-list)
   - [Contents](#contents)
   - [Options](#options)
     - [verbose](#verbose)

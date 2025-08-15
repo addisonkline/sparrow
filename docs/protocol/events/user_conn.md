@@ -1,25 +1,25 @@
-# user_conn
+# Event `user_conn`
 
 ## Schema
 ```json
 {
-    "type": "user_conn",
-    "tag": "UUID as string",
-    "alias": "string",
-    "is_new_user": "bool"
+    "head": {
+        "protocol": "sparrow",
+        "version": server version number as string,
+        "origin": server URI as string,
+        "timestamp": ISO 8601 timestamp as string,
+        "type": "event/user_conn"
+    },
+    "body": {
+        "user_id": connected user ID as string
+    }
 }
 ```
 
 ## Server
 
-Should never recieve
-
-Broadcasted to all clients when a user connects, with "is_new_user" set to true if the user has not connected to the server before
+![TODO]
 
 ## Client
 
-Should never send
-
-On receipt:
-- If is new user, display "New user {alias} connected"
-- Else, display "User {alias} connected"
+![TODO]

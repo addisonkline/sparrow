@@ -1,10 +1,10 @@
-# cli command run
+# CLI command `run`
 
 Run an existing server and output it to the console.
 
 ## Contents
 
-- [cli command run](#cli-command-run)
+- [CLI command `run`](#cli-command-run)
   - [Contents](#contents)
   - [Arguments](#arguments)
     - [name](#name)

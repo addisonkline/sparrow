@@ -1,39 +1,48 @@
-# connect
+# Request and Response for `connect`
 
 ## Schema
 
-### connect_req
+### Request
 ```json
 {
-    "protocol": "sparrow",
-    "version": "0.0.1",
-    "method": "connect",
+    "head": {
+        "protocol": "sparrow",
+        "version": client version number as string,
+        "origin": client IP address as string,
+        "timestamp": ISO 8601 timestamp as string,
+        "type": "request/connect"
+    },
     "body": {
-        "tag": "string"
+        "user_id": user ID for login as string,
+        "public_key": user public key for login as string,
+        "private_key": user private key for login as string
     }
 }
 ```
 
-### connect_res
+### Response
 ```json
 {
-    "protocol": "sparrow",
-    "version": "0.0.1",
-    "method": "connect",
-    "return_code": "number",
-    "message": "string",
+    "head": {
+        "protocol": "sparrow",
+        "version": server version number as string,
+        "origin": server URI as string,
+        "timestamp": ISO 8601 timestamp as string,
+        "type": "response/connect"
+    },
     "body": {
-        "session_key": "string"
+        "success": operation success value as boolean,
+        "info": {
+            "session_token": user's session token as string
+        }
     }
 }
 ```
 
 ## Server
 
-Upon receiving a ```connect_req``` from a client, the server attempts to authenticate the user. If this is successful, the ```connect_res``` contains the user's ```session_key``` and ```message``` is 'success'. Otherwise, no session key is included, ```return_code``` is nonzero, and ```message``` contains a detailed error message. 
-
-A successful connection creates a ```user_conn``` event.
+![TODO]
 
 ## Client
 
-A client sends a ```connect_req```, which contains the user's ```tag```, to a server. The client will then receive a ```connect_res``` from the server, indicating whether or not the connection was successful.
+![TODO]

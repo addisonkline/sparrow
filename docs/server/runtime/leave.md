@@ -1,10 +1,10 @@
-# runtime command leave
+# Runtime command `leave`
 
 Stop outputting the server to the console, but keep it running in the background.
 
 ## Contents
 
-- [runtime command leave](#runtime-command-leave)
+- [Runtime command `leave`](#runtime-command-leave)
   - [Contents](#contents)
   - [Options](#options)
     - [save](#save)

@@ -1,10 +1,10 @@
-# runtime command save
+# Runtime command `save`
 
 Save the current state of the server without closing it.
 
 ## Contents
 
-- [runtime command save](#runtime-command-save)
+- [Runtime command `save`](#runtime-command-save)
   - [Contents](#contents)
   - [Description](#description)
 

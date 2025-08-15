@@ -1,10 +1,10 @@
-# cli command stop
+# CLI command `stop`
 
 Save and close a server that is running in the background.
 
 ## Contents
 
-- [cli command stop](#cli-command-stop)
+- [CLI command `stop`](#cli-command-stop)
   - [Contents](#contents)
   - [Arguments](#arguments)
     - [name](#name)

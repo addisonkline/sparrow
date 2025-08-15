@@ -1,10 +1,10 @@
-# cli command start
+# CLI command `start`
 
 Start up an existing server, but run it in the background.
 
 ## Contents
 
-- [cli command start](#cli-command-start)
+- [CLI command `start`](#cli-command-start)
   - [Contents](#contents)
   - [Arguments](#arguments)
     - [name](#name)

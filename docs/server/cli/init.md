@@ -1,10 +1,10 @@
-# cli command init
+# CLI command `init`
 
 Initialize a new server.
 
 ## Contents
 
-- [cli command init](#cli-command-init)
+- [CLI command `init`](#cli-command-init)
   - [Contents](#contents)
   - [Arguments](#arguments)
     - [name](#name)

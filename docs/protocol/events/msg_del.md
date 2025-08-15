@@ -1,4 +1,4 @@
-# Event `msg_new`
+# Event `msg_del`
 
 ## Schema
 ```json
@@ -8,12 +8,11 @@
         "version": server version number as string,
         "origin": server URI as string,
         "timestamp": ISO 8601 timestamp as string,
-        "type": "event/msg_new"
+        "type": "event/msg_del"
     },
     "body": {
-        "msg_id": message ID as string,
-        "user_id": sender ID as string,
-        "content": message content as string
+        "msg_id": ID of deleted message as string,
+        "user_id": user ID of message deleter as string
     }
 }
 ```
