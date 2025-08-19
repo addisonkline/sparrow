@@ -30,9 +30,10 @@ A method is a type of request/response communication. Below are all of the metho
 - [alias_edit](req_res/alias_edit.md): A user attempts to change their server alias.
 - [connect](req_res/connect.md): A user attempts to connect to a given server.
 - [disconnect](req_res/disconnect.md): A user connected to a given server attempts to disconnect.
-- [msg_del](events/msg_del.md): A user attempts to delete an existing message.
-- [msg_edit](events/msg_edit.md): A user attempts to edit an existing message.
-- [msg_new](events/msg_new.md): A user attempts to send a new message.
+- [msg_del](req_res/msg_del.md): A user attempts to delete an existing message.
+- [msg_edit](req_res/msg_edit.md): A user attempts to edit an existing message.
+- [msg_fetch](req_res/msg_fetch.md): A user attempts to fetch all messages sent after a given timestamp.
+- [msg_new](req_res/msg_new.md): A user attempts to send a new message.
 
 ## Events
 An event is a form of communication that is broadcast to the server when triggered. Below are all of the events currently supported by the Sparrow Protocol:
@@ -43,3 +44,4 @@ An event is a form of communication that is broadcast to the server when trigger
 - [user_alias_edit](events/user_alias_edit.md): A user's alias is edited.
 - [user_conn](events/user_conn.md): A user connects.
 - [user_disconn](events/user_disconn.md): A user disconnects.
+- [user_register](events/user_register.md): Register a new user on this server.
